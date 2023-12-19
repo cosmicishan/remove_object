@@ -61,7 +61,7 @@ def remove_object(image, results, remove):
 
 def process_image(image):
 
-    results = model.predict(source=image, conf=0.75)
+    results = model.predict(source=image, conf=0.50)
 
     img, detected = object_recognition(image, results)
 
